@@ -1,0 +1,40 @@
+html { font-size:100%; } /* all of ie hacked */
+
+
+/* -------------------------------- LOGIN CONTROL IE7 HAX  ----------------------------------------- */
+
+#a-logn-logo, #a-close {
+	top: 5px;
+}
+#a-close {
+	top: 0;
+	left: 436px;
+}
+#tb-logn-form label {
+	margin: 0 0 0 7px;
+}
+#tb-logn-form .lbl-bot {
+	margin: 7px 0 0 7px;
+}
+.sp-logn-inpt {
+	margin: 5px 0 0 0px;
+}
+#tb-logn-form {
+	right: -8px;
+}
+#h3-logn-titl {
+	padding: 125px 0 0 20px;
+}
+#sp-vrsn-contnr, .sp-cms-vrsn {
+	margin: 15px 0 0 32px;
+}
+.sp-cms-vrsn {
+	font-weight: normal;
+	margin: 0;
+}
+.sp-logn-inpt.sgn-in input {
+	padding: 24px 10px 10px 10px;
+}
+#f-logn-form {
+	width: 305px;
+}

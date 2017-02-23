@@ -1,0 +1,110 @@
+#d-searchWrapper, #mainNav, #sp-navIcon, #d-overFlash .d-rightCol, #d-flash, #d-pageFunctionality, #d-homeBody #d-contentWrapper .d-rightCol, #d-footerWrapper, #ul-complianceLinks, #a-searchOptions, #d-sectionImageArea,#d-contentWrapper #d-breadCrumbTop .d-rightCol {
+	display: none;
+}
+#d-homeBody #d-contentWrapper .d-middleCol .d-rightCol {
+	display: block;
+}
+
+
+#a-detLogo, #a-jccaLogo, #d-homeBody #d-contentWrapper #h1-welcome, #h3-news, #h3-events, #h3-quicklinks, #d-internalBody #a-jccaLogo, #d-internalBody #a-detLogo, #d-breadCrumbTop h4 {
+	background: transparent;
+	text-indent: 0;
+	width: 100%;
+	height: auto;
+	color: #000;
+	margin: 1.25em 0;
+	border: none;
+}	
+#a-jccaLogo {
+	font-weight: bold;
+}
+#d-headerBG, #d-headerWrapper, #d-internalBody #d-headerBG, #d-breadCrumbArea, #d-breadCrumbTop, #d-breadCrumbBottom { 
+	background: transparent;
+	background-color: #fff;
+}
+#d-overFlash {
+	position: static;
+	float: left;
+	width: 100%;
+}
+#d-contentWrapper .d-leftCol {
+	width: 100%;
+}
+#d-homeBody #d-contentWrapper .d-cmsInput .p-first {
+	width: 250px;
+	margin: 0;
+}
+#d-homeBody #d-contentWrapper .d-cmsInput p {
+	float: left;
+	clear: none;
+	width: 250px;
+	margin: 0 0 0 25px;
+}
+#d-homeBody .d-middleCol, #d-homeBody #d-contentWrapper .d-middleCol .d-leftCol, #d-homeBody #d-contentWrapper .d-middleCol .d-rightCol {
+	margin: 0;
+	background: transparent;
+	width: 300px;
+}
+#d-homeBody .d-middleCol {
+	width: auto;
+}
+
+
+
+
+#d-internalBody #d-contentWrapper h1 {
+	width: 95%;
+	clear: left;
+	margin: 10px 0 15px 10px;
+}
+.d-container, #d-internalBody #d-headerBG, #d-headerWrapper, #d-contentWrapper {
+	float: left;
+	width: 800px;
+	clear: both;
+}
+.d-container {
+	width: 100%;
+}
+#d-overSectionImage {
+	height: 120px;
+	float: left;
+	position: static;
+	width: auto;
+}
+#d-breadCrumbArea, #d-breadCrumbTop, #d-breadCrumbTop .d-leftCol, #d-breadCrumbBottom {
+	width: 100%;
+}
+#d-breadCrumbBottom {
+	height: 0;
+}
+#d-internalBody #d-contentWrapper .d-cmsInput {
+	width: 480px;
+	clear: left;
+}
+#d-contentWrapper .d-cmsInput .d-leftCol, #d-contentWrapper .d-cmsInput .d-rightCol {
+	width: 480px;
+	margin: 0;
+}
+#d-contentWrapper .d-rightCol {
+	margin: 10px 0 0 10px;
+}
+#ul-breadCrumbList li a, #ul-breadCrumbList li {
+	color: #000;
+}
+ul#ul-breadCrumbList {
+	margin: 0;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

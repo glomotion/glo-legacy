@@ -1,0 +1,492 @@
+/*****************************************************
+** Veronica's Assassin Website
+** (c) Copyright 2007
+**
+** media: screen
+** Designer: Tim Paul
+** Developer: Tim Paul
+** LastModified: 22nd April 2007
+
+*****************************************************/
+@import url(lightbox.css);
+
+a:link {text-decoration: none; color: #f52b1c;}
+a:visited {text-decoration: none; color: #f52b1c;}
+a:active {text-decoration: none}
+a:hover {text-decoration: underline overline; color: #e25b06;}
+
+/*************************       LAYOUT      **************************/
+
+body {
+	color: #FFFFFF;
+	margin: 0;
+	padding:0;
+	text-align: left;
+	font-size: 0.70em;
+	line-height: 2.0em;
+	font-family: arial, verdana, helvetica, sans-serif;
+	/* font-family: "Lucida Sans Unicode", "Trebuchet MS", helvetica, arial, sans-serif; */
+	background-color: #281607;
+	background-image: url(../images/body_repeating.gif);
+	background-repeat: repeat-x;
+}
+
+.bg_img {
+	width: 100%;
+	color: #FFFFFF;
+	background-repeat:no-repeat
+}
+
+body.music .bg_img {
+	background-image: url(../images/bg_content.gif);
+	min-height: 727px;
+}
+
+body.gigs .bg_img {
+	background-image: url(../images/bg_content.gif);
+	min-height: 727px;
+}
+
+body.bios .bg_img {
+	background-image: url(../images/bg_content.gif);
+	min-height: 727px;
+}
+
+body.contact .bg_img {
+	background-image: url(../images/bg_content.gif);
+	min-height: 727px;
+}
+
+body.home .bg_img {
+	background-image: url(../images/bg_home.gif);
+	min-height: 648px;
+}
+
+.container {
+	width: 750px;
+	display: block;
+}
+
+.left_col {
+	float: left;
+	width: 387px;
+}
+
+body.music .left_col {
+	overflow: hidden;
+	width: 295px;
+}
+
+body.gigs .left_col {
+	overflow: hidden;
+	width: 295px;
+}
+
+body.bios .left_col {
+	overflow: hidden;
+	width: 295px;
+}
+
+body.contact .left_col {
+	overflow: hidden;
+	width: 295px;
+}
+
+.right_col {
+	float: left;
+	width: 363px;
+}
+
+body.music .right_col {
+	width: 454px;
+}
+
+body.gigs .right_col {
+	width: 454px;
+}
+
+body.bios .right_col {
+	width: 454px;
+}
+
+body.contact .right_col {
+	width: 454px;
+}
+
+.content {
+	display: block;
+	margin: 161px 0 0 38px;
+	width: 402px;
+	padding: 0 0 20px 0;
+}
+
+body.contact .content {
+	display: block;
+	margin: 172px 0 0 38px;
+	width: 402px;
+	padding: 0 0 190px 0;
+}
+
+.welcome_content {
+	width: 329px;
+	margin-top: 85px;
+	margin-left: 20px;
+}
+
+.footer {
+	background-image: url(../images/footer_repeating.gif);
+	background-repeat: repeat-x;
+	background-position: top left;
+	width: 100%;
+	height: 84px;
+	clear: both;
+}
+
+body.bios .content a {
+	width: 324px;
+	padding: 0;
+	height: 43px;
+	display: block;
+	margin-bottom: 10px;
+	border: 1px solid #422b18;
+}
+
+.media {
+	margin: 360px 0 20px 35px;
+	display: block;
+	color: #a67b57;
+}
+
+.media a {
+	width: 324px;
+	padding: 0;
+	height: 43px;
+	display: block;
+	margin: 0 0 10px 0;
+	border: 1px solid #422b18;
+}
+
+.media a:hover {
+	width: 324px;
+	padding: 0;
+	height: 43px;
+	display: block;
+	margin: 0 0 10px 0;
+	border: 1px solid #e25b06;
+}
+
+body.bios .content a:hover {
+	padding: 0;
+	width: 324px;
+	height: 43px;
+	display: block;
+	border: 1px solid #e25b06;
+	margin-bottom: 10px;
+}
+
+.media a img {
+	border: none;
+}
+
+body.bios .content a img {
+	border: none;
+}
+
+.skip_to_player {
+	overflow: hidden;	
+	height: 180px;
+	background-image: url(../images/h3_link_to_player.gif);
+	background-repeat:no-repeat;
+	width: 191px;
+	margin: 0 0 0 19px;
+	padding: 0 0 0 0px;
+	line-height: 1.3em;
+}
+
+.skip_to_player p {
+	width: 140px;
+	padding-top: 82px;
+	padding-left: 15px;
+}
+
+.skip_to_player a {
+	color: #e66700;
+}
+
+.skip_to_player a:hover {
+	color: #b30000;
+}
+
+#flash {
+	display: block;
+	width: 255px;
+	text-align: right;
+	margin: 0 0 0 27px;
+}
+
+#flash h2 {
+	margin: 80px 0 0 -23px;
+	padding: 0 0 0 0;
+	height: 94px;
+	width: 278px;
+	font-size: 1%;
+	text-indent: -30000em;
+	background-repeat: no-repeat;
+	color: #281607;
+	background-color: transparent;
+	background-image: url(../images/h2_preview_trax.gif)
+}
+
+#preview-trax {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 300px;
+	height: 360px;
+}
+
+#preview-trax embed {
+	display: block;
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.fixer {
+	display: block;
+	width: 300px;
+	height: 360px;
+}
+	
+
+
+/*************************       NAV      **************************/
+
+.nav {
+	display: block;
+	margin: 0;
+	height: 200px;
+	padding: 110px 0 0 0;
+	list-style: none;
+}
+
+.nav li {
+	margin: -6px 0 0 0;
+	padding: 0;
+}
+
+.nav li a {
+	margin: 0;
+	display: block;
+	font-size: 1%;
+	text-indent: -30000em;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-color: transparent;
+}
+
+.nav li a:hover {text-decoration: none}
+	
+.nav_home a {
+	height: 41px;
+	width: 163px;
+	background-image: url(../images/nav_home_off.gif)
+}
+
+.nav_home a:hover {
+	background-image: url(../images/nav_home_hov.gif)
+}
+
+.nav_home a.selected, .nav_home a:hover.selected {
+	background-image: url(../images/nav_home_sel.gif)
+}
+
+.nav_music a {
+	height: 34px;
+	width: 149px;
+	background-image: url(../images/nav_music_off.gif)
+}
+
+.nav_music a:hover {
+	background-image: url(../images/nav_music_hov.gif)
+}
+
+.nav_music a.selected, .nav_music a:hover.selected {
+	background-image: url(../images/nav_music_sel.gif)
+}
+
+
+.nav_gigs a {
+	height: 39px;
+	width: 171px;
+	background-image: url(../images/nav_gigs_off.gif)
+}
+
+.nav_gigs a:hover {
+	background-image: url(../images/nav_gigs_hov.gif)
+}
+
+.nav_gigs a.selected, .nav_gigs a:hover.selected {
+	background-image: url(../images/nav_gigs_sel.gif)
+}
+
+.nav_bios a {
+	height: 43px;
+	width: 130px;
+	background-image: url(../images/nav_bios_off.gif)
+}
+
+.nav_bios a:hover {
+	background-image: url(../images/nav_bios_hov.gif)
+}
+
+.nav_bios a.selected, .nav_bios a:hover.selected {
+	background-image: url(../images/nav_bios_sel.gif)
+}
+
+.nav_contact a {
+	height: 43px;
+	width: 208px;
+	background-image: url(../images/nav_contact_off.gif)
+}
+
+.nav_contact a:hover {
+	background-image: url(../images/nav_contact_hov.gif)
+}
+
+.nav_contact a.selected, .nav_contact a:hover.selected {
+	background-image: url(../images/nav_contact_sel.gif)
+}
+
+
+/*************************       HEADINGS & TEXT     **************************/
+
+.welcome_content h2 {
+	margin: 0 0 0 0;
+	padding: 0 0 15px 0;
+	height: 52px;
+	width: 315px;
+	font-size: 1%;
+	text-indent: -30000em;
+	background-repeat: no-repeat;
+	background-position: 7px 13px;
+	background-color: transparent;
+	background-image: url(../images/h2_politics_of_fear.gif)
+}
+
+.welcome_content p {
+	margin-left: 15px;
+}
+
+.media h2 {
+	margin: 0;
+	padding: 0 0 9px 0;
+	height: 50px;
+	width: 260px;
+	font-size: 1%;
+	text-indent: -30000em;
+	background-repeat: no-repeat;
+	float: left;
+	background-position: 18px 7px;
+	background-color: transparent;
+	background-image: url(../images/h2_photos.gif)
+}
+
+.media p {
+	padding: 0 0 0 20px;
+	line-height: 1.5em;
+	width: 280px;
+	clear: left;
+}
+
+body.music .content h2 {
+	margin: 0;
+	padding: 0 0 15px 0;
+	height: 50px;
+	width: 279px;
+	font-size: 1%;
+	text-indent: -30000em;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: -2px 19px;
+	background-image: url(../images/h2_music.gif)
+}
+
+body.gigs .content h2 {
+	margin: 0;
+	padding: 0 0 15px 0;
+	height: 50px;
+	width: 180px;
+	font-size: 1%;
+	text-indent: -30000em;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: -4px 23px;
+	background-image: url(../images/h2_gig_listings.gif)
+}
+
+body.bios .content h2 {
+	margin: 0;
+	padding: 0 0 15px 0;
+	height: 50px;
+	width: 250px;
+	font-size: 1%;
+	text-indent: -30000em;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: -4px 18px;
+	background-image: url(../images/h2_bios.gif)
+}
+
+body.contact .content h2 {
+	margin: 0;
+	padding: 0 0 4px 0;
+	height: 59px;
+	width: 298px;
+	font-size: 1%;
+	text-indent: -30000em;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: -4px 7px;
+	background-image: url(../images/h2_contact_us.gif)
+}
+
+.goldtext {
+	color: #e66700;
+}
+
+.goldtextbold {
+	color: #e66700;
+	font-weight: bold;
+}
+
+.goldlabel {
+	color: #e66700;
+	font-weight: bold;
+}
+
+#flash p {
+	padding: 0 10px 0 0;
+	margin: 0 0 0 0;
+}
+
+.content p {
+	padding: 0 0 0 3px;
+}
+
+.gigreport {
+	display: block;
+	margin-top: 2.1em;
+}
+
+.content hr {
+	border: 2px solid #301d0e;
+}
+
+.bios-info-lists {
+	list-style: square;
+	padding-left: 15px;
+	margin: 0;
+}
+	

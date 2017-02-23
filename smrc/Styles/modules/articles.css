@@ -1,0 +1,11 @@
+/*-----Articles-----------*/
+
+.articleSection {
+border-bottom:1px dotted #ccc;
+padding:0 0 15px 0;
+}
+
+.articleDate {
+color:#666666;
+font-size:0.9em;
+}

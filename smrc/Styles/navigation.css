@@ -1,0 +1,147 @@
+/* Preload Rollover Images */
+.dropdown { /* ie 6 hacked */
+	padding: 0;
+	margin: 43px 0 2px 2px;
+	list-style:none;
+	clear:left;
+	float: left;
+	width: 690px;
+	z-index:500;
+	line-height: normal;
+}
+.dropdown a {
+	text-decoration: none;
+}
+.dropdown li.top { /* ie 6 hacked */
+	display:block;
+	float:left;
+	background-image: url(../Images/navSpacer.png);
+	background-position: right 11px;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin: 0 6px 0 0;
+}
+.dropdown li.last {
+	background: transparent;	
+}
+.dropdown li a.top_link {
+	display: block;
+	float: left;
+	color: #79aede;
+	font-weight: normal;
+	padding: 8px 10px;
+	margin: 0 0 0 0;
+	cursor: pointer;
+	font-size: 1.1em;
+}
+.dropdown li a.top_link_on {
+	color: #fcfd89;
+	display: block;
+	float: left;
+	background-color: #8b9c1f;
+	padding: 8px 10px;
+	font-weight: normal;
+	font-size: 1.1em;
+}
+.dropdown li a.top_link:hover {
+	background: transparent;
+	background-image: url(../Images/15PercentBlack.png);
+	background-repeat: repeat;
+	color: #fff;
+	text-decoration: none;
+}
+.dropdown li:hover > a.top_link {
+	background: transparent;
+	color: #fff;
+	background-image: url(../Images/15PercentBlack.png);
+	background-repeat: repeat;
+}
+.dropdown table {
+	border-collapse:collapse;
+	width:0;
+	height:0;
+	position:absolute;
+	top:0;
+	left:0;
+}
+/* Default link styling */
+
+/* Style the list OR link hover. Depends on which browser is used */
+
+.dropdown a:hover {
+	visibility:visible;
+	position:relative;
+	z-index:200;
+}
+.dropdown li:hover {
+	position:relative;
+	z-index:200;
+}
+/* keep the 'next' level invisible by placing it off screen. */
+.dropdown ul, .dropdown :hover ul ul, .dropdown :hover ul :hover ul ul, .dropdown :hover ul :hover ul :hover ul ul, .dropdown :hover ul :hover ul :hover ul :hover ul ul {
+	position:absolute;
+	left:-9999px;
+	top:-9999px;
+	width:0;
+	height:0;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.dropdown :hover ul.sub {
+	left: -1px;
+	top: 2.9em;
+	background-image: url(../Images/blank.gif);
+	background-repeat: repeat;
+	padding: 1px;
+	margin: 0 0 0 0;
+	white-space:nowrap;
+	width:205px;
+	height:auto;
+	z-index:300;
+	font-size: 11px;
+}
+.dropdown :hover ul.sub li { /* ie 6 hacked */
+	display:block;
+	float:left;
+	width:205px;
+	padding: 0;
+	margin: 0;
+}
+.dropdown :hover ul.sub li a { /* ie 6 hacked */
+	display: block;
+	width: 193px;
+	margin: 1px 0 0 0;
+	padding: 9px 0 9px 12px;
+	color:#fff;
+	font-weight: normal;
+	background-image: url(../Images/70PercentBlack.png);
+	background-repeat: repeat;
+
+}
+/*.dropdown :hover ul.sub li a.fly {
+	background:#fff url(prodrop2/arrow.gif) 80px 7px no-repeat;
+}*/
+.dropdown :hover ul.sub li a:hover { /* ie 6 hacked */
+	color:#6192bf;
+	background: white;
+}
+/*.dropdown :hover ul.sub li a.fly:hover {
+	background:#FF0033 url(prodrop2/arrow_over.gif) 80px 7px no-repeat;
+	color:#fff;
+}
+.dropdown :hover ul li:hover > a.fly {
+	background:#FF0033 url(prodrop2/arrow_over.gif) 80px 7px no-repeat;
+	color:#fff;
+}*/
+.dropdown :hover ul :hover ul, .dropdown :hover ul :hover ul :hover ul, .dropdown :hover ul :hover ul :hover ul :hover ul, .dropdown :hover ul :hover ul :hover ul :hover ul :hover ul {
+	left:205px;
+	top:-4px;
+	background: #fff;
+	padding: 0 0;
+	border:1px solid #FF0033;
+	white-space:nowrap;
+	width:205px;
+	z-index:200;
+	height:auto;
+}

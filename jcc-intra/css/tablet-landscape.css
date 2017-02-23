@@ -1,0 +1,1209 @@
+/* Type and Image Presets -----------------------------------------------------------------------------------------------------------------------------*/
+
+/* Font-face definitions -------------------------------------------------------------------------------------------  */
+
+@font-face {
+	font-family: 'DroidSansRegular';
+	src: url('DroidSans-webfont.eot');
+	src: local('☺'), url('../fonts/DroidSans-webfont.woff') format('woff'), url('../fonts/DroidSans-webfont.ttf') format('truetype'), url('../fonts/DroidSans-webfont.svg#webfontKYIQSBQk') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DroidSansBold';
+	src: url('DroidSans-Bold-webfont.eot');
+	src: local('☺'), url('../fonts/DroidSans-Bold-webfont.woff') format('woff'), url('../fonts/DroidSans-Bold-webfont.ttf') format('truetype'), url('../fonts/DroidSans-Bold-webfont.svg#webfontljpTCDjw') format('svg');
+	font-weight:bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'CenturyGothicRegular';
+	src: url('../fonts/gothic-webfont.eot?') format('eot'),  url('../fonts/gothic-webfont.woff') format('woff'),  url('../fonts/gothic-webfont.ttf') format('truetype'),  url('../fonts/gothic-webfont.svg#webfontgY4OkRKa') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'CenturyGothicBold';
+	src: url('../fonts/gothicb-webfont.eot?') format('eot'),  url('../fonts/gothicb-webfont.woff') format('woff'),  url('../fonts/gothicb-webfont.ttf') format('truetype'),  url('../fonts/gothicb-webfont.svg#webfontkr2szg0N') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* Base Text -------------------------------------------------------------------------------------------  */
+
+html {
+	font-size: 16px;
+}
+body {
+	font-family: 'DroidSansRegular', verdana, sans-serif;
+	font-size: 100%; /* 16px * 62.5% = 10px : 1em now = 10px */
+	line-height: 1.8em;		/* Changing this will break the baseline grid. */
+	-webkit-text-size-adjust: none;		/* Stops the iPhone scalling type up */
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+strong {
+	font-family: 'DroidSansBold', verdana, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'CenturyGothicRegular';
+	font-weight: normal;
+	line-height: 1.2em;
+}
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+	font-family: 'CenturyGothicBold';
+}
+a {
+	text-decoration: none;
+	color: #7688a8;
+	border-bottom: 2px solid #bec6d5;
+}
+a:hover {
+	color: #000;
+	border-bottom: none;
+}
+a img {
+	display: block;		/* Stops image links getting text link styles */
+}
+img {
+	-webkit-border-radius: 9px;
+	border-radius: 9px;
+	margin-bottom: 20px;
+}
+img, object, embed {
+	margin-bottom: 20px;
+}
+a img {
+	border: none;
+	margin: 0;	
+}
+p, ul, ol, blockquote {
+	margin-bottom: 24px;	/* Changing this will break the baseline grid. */
+	line-height: 1.5em;
+}
+li {
+	margin-bottom: 6px;
+}
+blockquote {
+	border-left: 1px solid #c1c1c1;
+	color: #747474;
+	padding-left: 15px;
+	margin-left: -15px;
+}
+h1 {
+	font-size: 4.0em;
+	letter-spacing: -0.09em;
+	line-height: 36px;		/* Changing this will break the baseline grid. */
+	margin-bottom: 24px;	/* Changing this will break the baseline grid. */
+}
+h2 {
+	font-size: 3.0em;
+	letter-spacing: -0.08em;
+	margin-bottom: 24px;	/* Changing this will break the baseline grid. */
+}
+h3 {
+	font-size: 2.0em;
+	letter-spacing: -0.07em;
+	margin-bottom: 24px;	/* Changing this will break the baseline grid. */
+}
+
+
+
+
+/* Layout for IPAD/TABLET version -----------------------------------------------------------------------------------------------------------------------------*/
+
+/* These selection declarations have to be separate.
+   No text-shadow: twitter.com/miketaylr/status/12228805301 
+   Also: hot pink. */
+::selection {
+	background:#eee;
+	text-shadow: none;
+}
+
+/* Main Homepage Styles -------------------------------------------------------------------------------------------  */
+
+#wrapper {
+	height:200px;		/* Of course you need to specify the object height */
+ 
+	position:relative;	/* On older OS versions "position" and "z-index" must be defined (absolute | relative), */
+	z-index:1;			/* it seems that recent webkit is less picky and works anyway. */
+}
+ 
+#scroller {
+/*	-webkit-touch-callout:none;*/
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+ 
+	padding: 0;
+ 
+/*	-webkit-box-shadow:0 0 8px #555;	/* Don't use box shadows, they slow down drastically CSS animations */
+}
+
+
+
+/* Header Area Styles ------------------------------------------  */
+
+#d-headr {
+	background: #131e38 url("../img/ipad-headr-bg.jpg") no-repeat top center;
+	border-bottom: 18px solid #eaeaea;
+	padding: 0 0 0 17px;
+}
+#d-srch-ovrly {
+	background: url("../img/srch-bg3.png") no-repeat top left;
+	position: absolute;
+	width: 550px;
+	height: 180px;
+	left: -240px;
+	top: -10px;
+	z-index: 0;
+}
+
+#d-srch {
+	float: left;
+	position: relative;
+	clear: left;
+	z-index: 1;
+	padding: 15px 0 0 0;
+}
+#d-srch input {
+	background: #fff url("../img/ipad-srch-icn.png") no-repeat 14px 10px;
+	
+	color: #969696;
+	border: none;
+	font-size: 1.0em;
+	letter-spacing: -0.05em;	
+	width: 200px;
+   	padding: 8px 10px 8px 40px;	
+	display: block;
+	
+	
+	-webkit-border-radius: 16px;
+	border-radius: 16px;		
+}
+#d-srch input:focus {
+	background: #FFAB12 url("../img/ipad-srch-icn-focus.png") no-repeat 14px 10px;
+	color: black;	
+}
+#a-advncd {
+	display: block;
+	float: left;
+	width: 125px;
+	border: none;
+	color: #a2afca;
+	font-family: 'CenturyGothicRegular';
+	letter-spacing: -0.03em;
+	line-height: 1.1em;	
+	font-size: 0.9em;
+	padding: 5px 5px 9px 65px;
+	margin: 10px 0 0 0;
+	background: url("../img/wrench.png") no-repeat 15px 10px;
+}
+#a-advncd strong {
+	font-family: 'CenturyGothicBold';
+	display: block;	
+}
+#a-advncd:hover {
+	background-color: rgba(0,0,0,0.15);
+	color: #fff;
+	-webkit-border-radius: 9px;
+	border-radius: 9px;		
+}
+.clr-fix {
+	clear: both;	
+}
+#a-jcc-txt-logo {
+	display: none;	
+}
+#a-logo {
+	display: block;
+	position: absolute;
+	top: 30px;
+	left: 37%;
+	border: none;
+	padding: 5px;
+}
+#d-weathr-usr-area {
+	float: right;
+	width: 280px;
+	position: relative;
+}
+#sp-weathr-icon {
+	display: block;
+	position: absolute;
+	z-index: 0;
+	margin: 7px 0 0 10px;	
+	width: 120px;
+	height: 113px;
+	background: url("../img/ipad-fine-cloudy.png") no-repeat 0 0;
+}
+#d-weathr-time {
+	position: relative;
+	z-index: 1;
+	background: url("../img/weather-time-bg.png") no-repeat left -22px;
+	min-height: 156px; 
+	width: 210px;	
+	float: right;
+	color: #fff;
+	font-family: 'CenturyGothicRegular';
+	text-align: right;
+}
+#d-time {
+	display: inline-block;
+	margin: 10px 30px 0 18px;
+}
+#d-time span {
+	display: block;
+	line-height: 1.1em;		
+	text-align: right;
+	overflow: hidden;	
+}
+#sp-time {
+	font-size: 2.2em;
+	letter-spacing: -0.1em;
+	color: #abb8cf;
+	margin: 2px 0 0 0;
+}
+#d-time #sp-day {
+	color: #ffab12;
+	font-family: 'CenturyGothicBold';
+	font-size: 2.25em;
+	width: 152px;
+	display: inline-block;
+	letter-spacing: -0.06em;
+	margin: 3px 0 0 0;
+}
+#sp-date {
+	margin: 8px 0 0 0;
+	font-size: 0.84em;	
+}
+#d-usr {
+	clear: both;
+	margin: -8px 0 0 0;
+	padding: 13px 0 33px 0;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+	background: url("../img/female-usr.png") no-repeat 140px top;
+	position: relative;
+	float: left;
+	z-index: 2;
+}
+#a-logout {
+	display: block;
+	float: right;
+	width: 51px;
+	height: 53px;
+	background: url("../img/logout-btn.png") no-repeat 0 0;
+	text-indent: -3000em;
+	border: none;
+	margin: 0px 25px 0px 40px;
+}
+#a-logout:hover {
+	background-position: -51px 0;
+}
+#d-usr span {
+	display: block;
+	font-size: 1.0em;
+	letter-spacing: -0.07em;
+	text-align: right;
+	line-height: 1.1em;					
+}
+#sp-usr-name {
+	color: #fff;
+	font-family: 'CenturyGothicBold';	
+	margin: 0;
+}
+#sp-usr-type {
+	color: #9eadca;
+	font-family: 'CenturyGothicRegular';
+	margin: 7px 0 0 0;		
+}
+#d-usr-options {
+	clear: both;
+	margin: 0 110px 0 0;	
+	text-align: right;
+}
+#d-usr-options a {
+	display: inline-block;
+	background: rgba(0,0,0,0.3);
+	color: #a6b3ce;	
+	padding: 0px 7px;
+	border: none;
+	margin: 0;
+	font-size: 0.70em;
+	letter-spacing: -0.03em;
+
+	-webkit-border-radius: 7px;
+	border-radius: 7px;		
+}
+#d-usr-options a:hover {
+	background: #ffab12;
+	color: #000;
+	text-shadow: none;
+}
+#d-welcome {
+	clear: both;
+	float: left;	
+	margin: -105px 0 0 15px;		
+}
+#h1-hello {
+	font-family: 'CenturyGothicRegular';
+	font-size: 1.8em;
+	letter-spacing: -0.06em;
+	font-weight: normal;
+	color: #fff;
+	margin: 0 0 7px;
+}
+#h1-hello strong {
+	font-family: 'CenturyGothicBold';	
+	color: #ffab12;		
+}
+
+#p-welcome {
+	color: #b2bccd;
+	font-size: 0.9em;
+	line-height: 1.4em;		
+	letter-spacing: -0.06em;
+	padding: 0;
+	margin: 0 0 0 3px;	
+}
+#p-welcome strong {
+	letter-spacing: -0.07em;	
+}
+#p-welcome strong span {
+	color: #f0a12d;	
+}
+
+
+
+
+/* Main navigation Menu Styles ------------------------------------------  */
+
+#d-nav {
+	width: 100%;
+	background: black url("../img/ipad-nav-wrppr.png") repeat-x 0 0	
+}
+#ul-nav {
+	padding: 10px 0 0 0;
+	margin: 0;
+	text-align: center;		
+}
+#ul-nav li {
+	display: inline-block;
+	margin: 0;
+}
+#ul-nav li a {
+	display: block;
+	border: none;
+	color: #727272;
+	padding: 13px 18px; 	
+	font-size: 1.2em;
+	letter-spacing: -0.06em;
+	font-family: 'CenturyGothicRegular';
+
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);	
+	
+	border-top-right-radius: 9px;
+	border-top-left-radius: 9px;
+		
+	-webkit-border-top-right-radius: 9px;	 	
+	-webkit-border-top-left-radius: 9px;
+
+}
+#ul-nav li a:hover {
+	background: #f0a12d;
+	color: #000;
+	text-shadow: none; 		
+}
+#ul-nav li #sel {
+	color: #fff;
+	background: rgba(255,255,255,0.13);
+
+}
+#ul-nav li #sel:hover {
+	text-decoration: underline;	
+}
+
+
+/* 1 Column Title Area Styles ------------------------------------------  */
+
+
+
+
+/* 3 Column Content Area Styles ------------------------------------------  */
+
+
+
+
+
+
+/* Notices Area Styles ---------------------------  */
+
+#d-notices, #d-events {
+	padding: 0;
+	margin: -33px 0 0 15px;
+	float: left;
+	width: 390px;
+}
+#d-notice-head {
+	background: #7688a8;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;		
+}
+#d-notice-func {
+	float: right;
+	width: 132px;
+	margin: 0 0 0 10px;
+	background: #687794;
+	
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+		
+	-webkit-border-top-right-radius: 15px;	 	
+	-webkit-border-bottom-left-radius: 15px;
+}
+
+#d-notice-func a {
+	display: block;
+	float: right;
+	width: 29px;	
+	text-indent: -3000em;
+	border: none;
+	margin: 15px 15px 0 0;	
+}
+#a-rss {
+	background: url("../img/notice-rss-btn.png") no-repeat left top;
+	height: 29px;
+}
+#a-hist {
+	background: url("../img/notice-hist-btn.png") no-repeat left top;
+	height: 30px;
+}
+#a-hist:hover, #a-rss:hover {
+	background-position: -29px 0;
+}
+#d-notice-func #a-add-notice {
+	clear: both;
+	color: #fff;
+	padding: 8px 35px 8px 10px;
+	margin: 10px 15px 15px;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	text-indent: 0;
+	box-shadow: 0 1px 0px rgba(255,255,255,0.15);
+	-webkit-box-shadow: 0 1px 0px rgba(255,255,255,0.15);	
+	width: auto;
+	font-size: 0.90em;
+	line-height: 1.2em;
+	letter-spacing: -0.09em;
+	background: #4d5d7a url("../img/add-notice-icn.png") no-repeat 72px 6px;
+	
+	-webkit-border-radius: 9px;
+	border-radius: 9px;			
+}
+#d-notice-func #a-add-notice:hover {
+	color: #fff;
+	background-color: #3d4c68;
+}
+#ul-filter-notices {
+	margin: 0 0 0 8px;
+	padding: 5px 0 12px 0;	
+	clear: both;
+}
+#ul-filter-notices li {
+	list-style: none;
+	display: inline-block;
+	margin: 0;	
+}
+#ul-filter-notices li a {
+	display: block;
+	border: none;
+	color: #fff;
+	font-size: 0.92em;
+	letter-spacing: -0.071em;
+	padding: 8px 4px 15px; 	
+	-webkit-border-radius: 7px;
+	border-radius: 7px;	
+	text-shadow: 0 1px 1px rgba(0,0,0,0.3);	
+}
+#ul-filter-notices li a:hover {
+	background: #687794;
+	padding: 3px 4px 15px;
+	margin: 5px 0 0 0;		
+}
+#ul-filter-notices li #sel {
+	background: #fff;
+	color: #7688a8;	
+	padding: 8px 4px 15px;
+	margin: 0;		
+	text-shadow: none;	
+}
+#d-notice-head h3 {
+	color: #c6cedb;
+	font-size: 1.20em;
+	letter-spacing: -0.1em;	
+	padding: 15px 0 0 15px;
+	margin: 0;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	
+}
+#d-notice-head h3 strong {
+	font-family: 'CenturyGothicBold';	
+	letter-spacing: -0.07em;
+	text-shadow: none;	
+	color: #414c64;		
+}
+#d-notice-head h3 span {
+	color: #fff;	
+}
+#d-refine-notices {
+	margin: 12px 0 0 15px;	
+}
+
+#f-refine input {
+	background: #fff url("../img/ipad-srch-icn.png") no-repeat 14px 8px;
+	
+	color: #969696;
+	border: none;
+	font-size: 0.9em;
+	letter-spacing: -0.05em;	
+	width: 150px;
+   	padding: 7px 10px 7px 40px;	
+	display: block;
+	
+	box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+	-webkit-border-radius: 16px;
+	border-radius: 16px;		
+}
+#f-refine input:focus {
+	background: #F0A12D	url("../img/ipad-srch-icn-focus.png") no-repeat 14px 8px;
+	color: black;
+}
+#ul-notice-listing {
+	list-style: none;
+	margin: -22px 0 0 0;
+	padding: 0 0 10px 0;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;	
+	z-index: 1;
+	position: relative;
+	background: #fff;
+}
+#ul-notice-listing li {
+	margin: 0;
+	padding: 10px;	
+	font-size: 0.82em;
+	line-height: 1.5em;
+}
+#ul-notice-listing li:first-child {
+	padding: 15px 10px 10px;	
+}
+#ul-notice-listing li:last-child {
+	background: #fff;	
+	padding: 10px;		
+}
+li:first-child .sp-article {
+	color: #5e5e5e;			
+}
+.sp-break-out {
+	width: 65px;
+	clear: right;
+	padding: 8px 10px 0;
+	margin: 4px 0 4px 14px;
+	float: right;
+	display: block;
+	font-size: 0.95em;	
+	letter-spacing: -0.09em;
+	line-height: 1.3em;	
+	color: #979797;
+	background: #f3f3f3;
+	
+	-webkit-border-radius: 9px;
+	border-radius: 9px;			
+}
+li:first-child .sp-break-out {
+	margin: 0 0 4px 12px;
+	color: #7688A8;	
+}
+.sp-break-out span, .sp-break-out span strong {
+	display: block;	
+}
+.sp-break-out span {
+	margin: 0 0 8px;	
+}
+.sp-title {
+	display: block;
+	font-weight: normal;	
+	font-size: 1.2em;
+	line-height: 1.3em;
+	letter-spacing: -0.08em;	
+	color: #ea9923;	
+	margin: 0 0 5px 0;		
+}
+.sp-title strong {
+	letter-spacing: -0.08em;	
+}
+li:first-child .sp-title {
+	color: #7688a8;	
+}
+.sp-article {
+	font-size: 0.9em;	
+	letter-spacing: -0.04em;
+	color: #8f8e8e;
+}
+#ul-pagr {
+	margin: -20px 0 10px 0;
+	padding: 30px 0 10px 10px;
+	list-style: none;
+	background: #f3f3f3;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;		
+}	
+#ul-pagr li {
+	display: inline-block;
+	margin: 0;
+	font-family: 'CenturyGothicBold';	
+	letter-spacing: -0.03em;
+	vertical-align: top;	
+}
+#ul-pagr a {
+	display: block;
+	padding: 5px 11px; 
+	-webkit-border-radius: 9px;
+	border-radius: 9px;	
+	border: none;
+}
+#ul-pagr #sel {
+	background: #e5e5e5;
+	color: #969696;
+}
+#ul-pagr #a-next, #ul-pagr #a-prev {
+	width: 15px;
+	height: 15px;
+	padding: 8px 10px;
+	margin: 0;
+}
+#a-next span, #a-prev span {
+	display: block;
+	background: url("../img/pgr-left-right-icns.png") no-repeat 0 0;		
+	margin: 0;
+	width: 15px;
+	height: 15px;
+}
+#a-prev span {
+	background-position: 0 -15px;	
+}
+#a-next:hover span {
+	background-position: -15px 0;	
+}
+#ul-pagr a:hover {
+	background: #7688a8;
+	color: #fff;	
+}
+#ul-pagr #sel:hover {
+	text-decoration: underline;	
+}
+
+
+
+/* Events Area Styles ---------------------------  */
+
+#d-events {
+	padding: 0 0 0 0;
+	float: left;	
+	min-height: 660px;
+}
+#d-events-head {
+	background: #f3f3f3;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;		
+}
+#d-events-func {
+	float: right;
+	margin: 0 0 0 25px;
+	background: #e4e4e4;
+	
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	
+	-webkit-border-top-right-radius: 15px;	 	
+	-webkit-border-bottom-left-radius: 15px;
+}
+#d-events-func a {
+	display: block;
+	float: right;
+	width: 45px;	
+	text-indent: -3000em;
+	border: none;	
+}
+#d-events-func #a-ical {
+	background: url("../img/ipad-btn.png") no-repeat left top;
+	height: 57px;	
+	margin: 18px 10px 18px 15px;		
+}
+#d-events-func #a-calendr {
+	background: url("../img/calendr-btn.png") no-repeat left top;
+	height: 60px;
+	width: 57px;	
+	margin: 18px 18px 18px 0;			
+}
+
+#d-events-head h3 {
+	color: #b0b0b0;
+	font-size: 1.4em;
+	letter-spacing: -0.1em;
+	padding: 15px 0 0 15px;
+	margin: 0;	
+}
+#d-events-head h3 strong {
+	font-family: 'CenturyGothicBold';	
+	letter-spacing: -0.05em;
+	color: #b0b0b0;		
+}
+#d-events-head h3 span {
+	color: #7688a8;	
+	display: block;
+	font-family: 'CenturyGothicBold';	
+	letter-spacing: -0.07em;
+	font-size: 1.40em;
+	line-height: 1.0em;
+	margin: 0 0 13px 0;	
+}
+#d-events-head h3 span strong {
+	color: #5b6a86;
+}
+#ul-filter-events {
+	margin: 0 0 0 10px;
+	padding: 5px 0 12px 0;	
+	clear: both;
+}
+#ul-filter-events li {
+	list-style: none;
+	display: inline-block;
+	margin: 0;	
+}
+#ul-filter-events li a {
+	display: block;
+	border: none;
+	color: #7f7f7f;
+	font-size: 1.0em;
+	letter-spacing: -0.071em;
+	padding: 8px 6px 15px; 	
+	-webkit-border-radius: 7px;
+	border-radius: 7px;	
+}
+#ul-filter-events li a:hover {
+	background: #e4e4e4;
+	color: #000;
+	padding: 3px 6px 15px;
+	margin: 5px 0 0 0;		
+}
+#ul-filter-events li #sel {
+	background: #fff;
+	color: #7688a8;	
+	padding: 8px 6px 15px;
+	margin: 0;		
+	text-shadow: none;	
+}
+#ul-event-listing {
+	list-style: none;
+	margin: -20px 0 0 0;
+	padding: 0;
+	z-index: 1;
+	position: relative;
+}
+#ul-event-listing li {
+	margin: 0;
+	padding: 10px 12px;	
+	font-size: 0.80em;
+	line-height: 1.5em;
+}
+#ul-event-listing li:first-child {
+	background: #fff;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	color: #5e5e5e;	
+	padding: 15px 10px 10px;	
+}
+#a-view-events {
+	display: block;
+	background: #f3f3f3;	
+	color: #a5a5a5;	
+	border: none;
+	padding: 13px 0 13px 15px;
+	margin: 15px 0 0 10px;
+	width: 200px;
+	-webkit-border-radius: 9px;
+	border-radius: 9px;
+	font-family: 'CenturyGothicRegular';	
+	font-size: 1.1em;	
+	letter-spacing: -0.06em;		
+}
+#a-view-events strong {
+	font-family: 'CenturyGothicBold';		
+}
+#a-view-events:hover {
+	background: #EA9923;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+a.a-read-on {	
+	color: #7688A8;
+	border-bottom: 2px solid #e9e9e9;
+	margin: 0 0 0 5px;
+}
+a.a-read-on:hover {
+	color: #000;
+	border: none;
+}
+
+/* Recent Files Area Styles ---------------------------  */
+
+#d-files {
+	width: 182px;
+	margin: 0 0 0 0;
+	padding: 55px 0 0 0;
+	background: #f3f3f3;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;	
+	position: absolute;
+	top: 315px;
+	right: 15px;
+}
+#a-print {
+	display: block;
+	margin: 0;
+	top: -50px;
+	left: 10px;
+	position: absolute;	
+	z-index: 3;		
+	width: 110px;
+	height: 102px; 
+	background: url("../img/print-btn.png") no-repeat left top;
+	border: none;
+	text-indent: -3000em;
+}
+#d-files h3 {
+	color: #b0b0b0;
+	font-size: 1.3em;
+	letter-spacing: -0.09em;
+	padding: 10px 0 5px 15px;
+	margin: 0;	
+}
+#d-files h3 strong {
+	font-family: 'CenturyGothicBold';	
+	letter-spacing: -0.07em;
+	color: #b0b0b0;		
+}
+#d-files h3 span {
+	color: #7688a8;	
+	display: block;
+	font-family: 'CenturyGothicBold';	
+	letter-spacing: -0.07em;
+	font-size: 1.40em;
+	line-height: 1.0em;
+	margin: 0 0 13px 0;	
+}
+#d-files h3 span strong {
+	color: #5b6a86;
+}
+
+.a-files {
+	display: block;
+	background: #e4e4e4;	
+	color: #a5a5a5;	
+	border: none;
+	padding: 10px 0 10px 15px;
+	margin: 0 10px 10px 10px;
+	-webkit-border-radius: 9px;
+	border-radius: 9px;
+	font-family: 'CenturyGothicRegular';	
+	font-size: 0.9em;
+	line-height: 1.2em;	
+	letter-spacing: -0.08em;		
+}
+.a-files strong {
+	font-family: 'CenturyGothicBold';		
+}
+.a-files:hover {
+	background: #EA9923;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+#ul-files-listing {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+	position: relative;
+}
+#ul-files-listing li {
+	margin: 0;
+	padding: 0px 10px 10px 12px;	
+	font-size: 0.85em;
+	line-height: 1.5em;
+}
+#ul-files-listing li a {
+	border: none;
+	display: block;	
+	padding: 0 0 0 55px;
+	background: url("../img/ipad-txt-file-icn.png") no-repeat left top;
+	font-size: 0.8em;
+	letter-spacing: -0.05em;
+}
+#ul-files-listing li span {
+	display: block;	
+	color: #7A7A7A;
+}
+#ul-files-listing li span {
+	font-size: 1.0em;
+	line-height: 1.6em;
+}
+#ul-files-listing li .sp-file-name {
+	font-family: 'CenturyGothicRegular';
+	letter-spacing: -0.04em;
+	font-size: 1.2em;	
+	line-height: 1.4em;	
+	padding: 0 0 5px 0;	
+	color: #EA9923;	
+}
+#ul-files-listing li:first-child span {
+	color: #5E5E5E;
+}
+#ul-files-listing li:first-child .sp-file-name {
+	color: #7688A8;
+}
+
+
+
+/* Footer Area Styles ------------------------------------------  */
+
+#d-footr {
+	background: #eaeaea;
+	border-top: 18px solid #dcdcdc;
+	clear: left;
+	margin: 15px 0 0 0;
+	padding: 0 0 29px 0;
+}
+#d-footr .twelvecol {
+	float: none;
+	width: 100%;
+	max-width: 1200px;	
+	margin: 0 auto;
+	padding: 15px 0 20px;
+	position: relative;
+}
+#p-copyrght {
+	color: #9c9c9c;	
+	margin: 15px 15% 0 35px;
+	float: left;
+	font-size: 0.9em;
+}
+#ul-footr {
+	list-style: none;
+	margin: 25px 0 0 0;
+	padding: 0;	
+}
+#ul-footr li {
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+#ul-footr a {
+	border: none;
+	background: #dcdcdc;
+	padding: 9px 15px;
+	
+	-webkit-border-radius: 9px;
+	border-radius: 9px;		
+}
+#a-dandelion {
+	margin: -30px 20px 0 0;
+	border: none;
+	display: block;
+	float: right;
+}
+
+
+
+
+/* Internal Page Styles -------------------------------------------------------------------------------------------  */
+
+.intrnl #d-srch {
+	padding: 20px 0;
+}
+#a-smll-logo {
+	top: 20px;
+	left: 47%;
+	display: block;
+	position: absolute;
+	border: none;
+	padding: 5px;
+}
+.intrnl #d-usr {
+	clear: none;
+	float: right;
+	height: 110px;
+	padding: 16px 0 0 0;
+	margin: 12px 0 0 0;
+}
+.intrnl #d-files {
+	top: 230px
+}
+
+.intrnl #a-logout {
+	margin: 0 15px 0 40px;
+}
+.intrnl #d-usr-options {
+	margin: 0 100px 0 0;
+	
+}
+
+.intrnl #a-print {
+
+}
+.intrnl #d-files h3 {
+	clear: left;
+}
+
+#a-logo-sans-symbl, #a-logo-sans-txt {
+	border: none;
+	display: block;
+	float: left;
+}
+#a-logo-sans-symbl img, #a-logo-sans-txt img {
+	margin: 0;
+}
+#a-logo-sans-symbl {
+	margin: 40px 0 0 12%;	
+}
+#a-logo-sans-txt {
+	margin: 35px 0 0 7%;		
+}
+.intrnl #a-advncd {
+	float: left;	
+	margin: 8px 0 10px 0;
+	padding: 5px 5px 9px 62px;
+	background-position: 12px 8px;	
+}
+.intrnl #d-nav {
+	float: left;
+	margin: -70px 0 0 0;
+	padding: 20px 0 0 0;	
+	min-width: 619px;
+}
+#d-mn-cntnt {
+	margin: 0 215px 0 15px;
+	min-height: 700px;	
+}
+#a-cntnt-option {
+	display: block;
+	float: right;	
+	width: 110px;
+	background: url("../img/intrnl-ipad-icn.png") no-repeat top right;
+	padding: 114px 0 0 0;	
+	margin: 25px 5px 0 0;
+	font-size: 0.85em;
+	line-height: 1.70em;
+	letter-spacing: -0.08em;
+	border: none;
+	text-align: right;
+}
+#a-cntnt-option strong {
+	display: block;	
+}
+#h1-page-titl {
+	padding: 0.35em 0 0.25em;	
+	color: #93a3bb;
+	margin: 0;
+	font-size: 2.8em;	
+	line-height: 1.3em;
+}
+#d-cms-input {
+	-webkit-column-count: 2;
+	-webkit-column-gap: 35px;
+	column-count: 2;
+	column-gap: 35px;	
+}
+#d-cms-input p {
+	color: #8a8a8a;
+	font-size: 0.90em;
+	line-height: 1.6em;
+	letter-spacing: -0.03em;
+}
+#d-cms-input img {
+	max-width: 100%;	
+}
+#ul-brd-crmb {
+	margin: 0 0 20px 0;
+	padding: 0;	
+}
+#ul-brd-crmb li {
+	margin: 0 15px 0 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: top;
+	list-style: none;	
+	letter-spacing: -0.04em;
+	font-size: 0.90em;
+	color: #8d8d8d;
+}
+#ul-brd-crmb li img {
+	margin: 4px 0 0 0;
+	display: block;
+}
+#ul-brd-crmb li a {
+	color: #6f86a7;
+}
+#ul-brd-crmb li a:hover {
+	border-bottom: 2px solid #000;
+	color: #000;	
+}
+#d-intro {
+	margin: 0 140px 30px -15px;
+}
+#d-intro p {
+	background: #93a3bb;
+	color: #fff;	
+	text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+	letter-spacing: -0.07em;
+	font-size: 1.05em;
+	padding: 12px 15px;
+	margin: 0;	
+	
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	
+	-webkit-border-top-right-radius: 15px;	 	
+	-webkit-border-bottom-right-radius: 15px;		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Layout for mobile version */
+
+@media handheld, only screen and (max-width: 767px) {
+.examplecontainer {
+ body {
+}
+}
+
+
+/* Provide higher res assets for iPhone 4 */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+/* An example of how to override an image with one twice the size for iPhone 4. Specify the original pixel size with background-size.
+.download {
+background: url(../img/downarrow@2x.png) no-repeat;
+background-size: 27px 28px;
+}
+*/
+
+}

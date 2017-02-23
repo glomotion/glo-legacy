@@ -1,0 +1,297 @@
+/*****************************************************
+** HLM Hospitality Accountants
+** (c) Copyright 2006
+**
+** media: screen
+** Designer: Tim Paul
+** Developer: Tim Paul
+** LastModified: 8th Aug 2006
+
+*****************************************************/
+
+a:link {text-decoration: none; color: #f52b1c;}
+a:visited {text-decoration: none; color: #f52b1c;}
+a:active {text-decoration: none}
+a:hover {text-decoration: underline overline; color: #34a4fb;}
+
+
+body {
+	color: #FFFFFF;
+	margin: 0;
+	padding:0;
+	text-align: center;
+	font-size: 0.75em;
+	font-family: arial, verdana, helvetica, sans-serif;
+	/* font-family: "Lucida Sans Unicode", "Trebuchet MS", helvetica, arial, sans-serif; */
+	background-color: #0f285f;
+	background-image: url(../images/bodyreplicating.jpg);
+	/*                  Left Top   */
+	background-position: 50% 0%;
+	background-repeat: repeat-x;
+}
+
+
+#bggrad {
+	display: block;
+	width: 100%;
+	height: 587px;
+	min-height: 200px;
+	background-image: url(../images/bggrad.jpg);
+	background-repeat: no-repeat;
+	/*                  Left Top   */
+	background-position: 50% 123px;
+	margin: 0 auto;
+	
+}
+
+html>body #bggrad {
+	height: auto;
+}
+
+
+#container {
+	display: block;
+	width: 740px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+
+#headerarea {
+	display: block;
+	Width: 740px;
+	height: 123px;
+	background-image: url(../images/headerbg.jpg);
+	background-repeat: no-repeat;	
+}
+
+
+#maincontent {
+	display: block;
+	Width: 740px;
+	height: 580px;
+	background-image: url(../images/contenttopbg.jpg);
+	background-repeat: no-repeat;
+}
+
+
+#leftcolumn {
+	float: left;
+	Width: 296px;
+	height: 200px;
+	background-repeat: no-repeat;
+}
+
+
+#rightcolumn {
+	float: left;
+	padding-left: 5px;
+	margin-left: 5px;
+	width: 434px;
+	height: 600px;
+	background-repeat: no-repeat;
+}
+
+
+#nav {
+	font-size: .9em;
+	display: block;
+	padding: 0;
+	margin: 0;
+	padding-top: 75px;
+	padding-left: 20px;
+	width: 266px;
+	height: 188px;
+	list-style: none;
+}
+
+
+#nav li {
+	padding: 0;
+	margin: 0;
+}
+
+
+#nav li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;	
+	width: 170px;
+/*               top right  bottom  left */
+	padding: 7px  1px    6px   31px ;
+	margin: 9px 0;
+}
+
+
+#nav li a:hover {
+	color: #f52b1c;
+	border: 1px solid #3288ff;
+	padding: 6px  0     5px   30px ;
+}
+
+
+#nav li a.selected {
+	border: 1px solid #3288ff;
+/*               top right bottom left */
+	padding: 6px  0     5px   30px ;
+	background-color: #1e51ab 
+}
+
+
+#bullets {
+	padding-top: 32px;
+	font-size: .9em;
+	display: block;
+	text-align: right;
+	width: 246px;
+	list-style: none;
+}
+
+
+#bullets li {
+	background-position: 100% 17px;
+	background-image: url(../images/bullet.gif);
+	background-repeat: no-repeat;
+	padding-right: 30px;
+	padding-top: 11px;
+}
+
+
+#content {
+	text-align: justify;
+	line-height: 1.8em;
+	padding-top: 239px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 39px;
+}
+
+
+#contentmore {
+	text-align: justify;
+	font-size: 1em;
+	line-height: 1.8em;
+	padding-top: 90px;
+	padding-bottom: 40px;
+	padding-left: 30px;
+	padding-right: 39px;
+}
+
+
+#contentcontainer {
+	display: block;
+	width: 433px;
+	height: 100%;
+	background-image: url(../images/contentcontainer.gif);
+	background-repeat: no-repeat;
+	/*                  Left   Top   */
+	background-position: 2px  72px;
+}
+
+
+#content h2 {
+	margin: 0;
+	padding: 0;
+	display: block;
+	height: 63px;
+	width: 350px;
+	font-size: 1%;
+	text-indent: -30000em;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-color: transparent;
+}
+
+
+#contentmore h2 {
+	margin: 0;
+	padding: 0;
+	display: block;
+	height: 29px;
+	width: 240px;
+	font-size: 1%;
+	text-indent: -30000em;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-color: transparent;
+}
+
+
+body#home #content h2 { 
+	background-image: url(../images/hometitletext.gif) 
+}
+
+
+body#services #contentmore h2 { 
+	background-image: url(../images/servicestitletext.gif) 
+}
+
+
+body#contactus #contentmore h2 { 
+	background-image: url(../images/contacttitletext.gif) 
+}
+
+
+#redbutton {
+	text-indent: -30000em;
+	font-size: 1%;
+	float: right;
+	padding-right: 24px;
+	height: 151px;
+	width: 152px;
+	background-image: url(../images/redbutton.gif);
+	background-repeat: no-repeat;
+}
+
+
+#contentmore h3 {
+	color: #f52b1c;
+	font-size: 1em;
+	padding: 1em 0 0 0;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+#contentmore p {
+	padding: 0 0 1em 0; 
+	margin: 0;
+}
+
+
+.contentlist {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 2.5em;
+	padding-top: 0;
+	padding-bottom: 1em;
+	padding-left: 1.5em;
+	list-style: none;
+	list-style-image: url(../images/contentbullet.gif);
+}
+
+
+body#contactus .contentlist { 
+	padding-top: 1em;
+}
+
+
+#servicesimage {
+	display: block;
+	width: 286px;
+	height: 100%;
+	margin-top: 190px; 
+	background-repeat: no-repeat;
+	background-image: url(../images/contentimage.jpg);
+}
+
+
+#contactimage {
+	display: block;
+	width: 286px;
+	height: 100%;
+	margin-top: 120px; 
+	background-repeat: no-repeat;
+	background-image: url(../images/contactimage.jpg);
+}
+	

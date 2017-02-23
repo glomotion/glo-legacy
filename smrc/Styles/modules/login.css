@@ -1,0 +1,291 @@
+body {
+	background-color: #CCCCCC;
+}
+#d-breezeLogin {
+	background-image: url(../../Images/bg.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 560px;
+	height: 290px;
+	font-size:130%;
+	position:absolute;
+	top:10%;
+	left:30%;
+	padding: 0;
+	z-index:990;
+	color: #fff;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#d-breezeLogin a {
+	text-decoration: none;
+	color: #bfbfbf;
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px dotted #4c4c4c;
+}
+#d-breezeLogin a:hover {
+	color: #99b223;
+	border-bottom: 1px dotted #52600c; 
+	padding: 0;
+	margin: 0;
+}
+#d-close {
+	float: right;
+}
+#d-close a {
+	background-image: url(../../Images/closeButton.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 19px;
+	height: 20px;
+	text-indent: -3000em;
+}
+#d-logo {
+	margin: 15px 0 0 0;
+	float: left;
+	width: 560px;
+}
+#d-logo h1 {
+	width: 241px;
+	height: 58px;
+	margin: 0 auto;
+	padding: 0;
+	background-image: url(../../Images/breezeLogo.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	text-indent: -3000em;
+}
+#d-topSpacer { /* IE 6 Hacked */
+	background-image: url(../../Images/topSpacer.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 496px;
+	height: 2px;
+	float: left;
+	clear: both;
+	margin: 12px 0 0 29px;
+	padding: 0;
+}
+#d-bottomSpacer { /* IE 6 Hacked */
+	background-image: url(../../Images/bottomSpacer.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 496px;
+	height: 2px;
+	float: left;
+	clear: both;
+	margin: 0 0 0 29px;
+}
+#d-titleArea {
+	width: 480px;
+	text-align: left;
+	float: left;
+	font-size: 0.70em;
+	padding: 0;
+	margin: 0;
+}
+#d-titleArea h3 {
+	background-image: url(../../Images/cmsUserLogin.gif);
+	background-repeat: no-repeat;
+	background-position: 0 8px;
+	clear: both;
+	margin: 0 0 0 235px;
+	padding: 0 0 10px 0;
+	width: 113px;
+	height: 25px;
+	text-indent: -3000em;
+}
+#d-titleArea p { /* IE 6 Hacked */
+	clear: both;
+	display: block;
+	margin: 0 0 0 120px;
+	padding: 0 0 6px 0;
+	width: 450px;
+}
+#d-titleArea span {
+	color: #bddf1f;
+}
+.d-errorMsg {
+	z-index: 999;
+	width: 108px;
+	position: absolute;
+	left: 25px;
+	top: 20px;
+	background-color: #dd0909;
+	border: 2px solid #b10c0c;
+	color: #fff;
+	padding: 7px;
+}
+
+#d-form { /* IE 7 Hacked */
+	display: block;
+	float: left;
+	width: 335px;
+	height: 116px;
+	border-right: 1px dotted #575757;
+	margin: 10px 10px 0 20px;
+	padding: 0 0 0 5px;
+	color: #838383;
+}
+#d-form span { /* IE 7 Hacked */
+	display: block;
+	float: left;
+	font-size: 0.70em;
+	clear: left;
+	width: 235px;
+	padding: 0 0 1px 0;
+	margin: 0;
+}
+#d-form input { /* IE 7 Hacked */ /* IE 6 Hacked */
+	display: block;
+	float: left;
+	width: 239px;
+	clear: left;
+	height: 26px;
+	margin: 0 0 6px 0;
+	padding: 2px 0 3px 5px;
+	background-color: #454545;
+	border: 4px solid #555555;
+	font-size: 1.4em;
+	letter-spacing: -0.04em;
+	color: #797979;
+}	
+#d-form input:hover {
+	background-color: #99b223;
+	border: 4px solid #7a8e1a;
+	color: #e6f893;
+}
+#d-goButton {
+	display: block;
+	float: right;
+}
+#d-goButton input { /* IE 7 Hacked */ 
+	width: 58px;
+	height: 99px;
+	float: left;	
+	margin: 15px 13px 0 0;
+	padding: 0;
+	cursor: pointer;
+	color: #838383;
+	font-size: 0.70em;
+	position: relative;
+	top: -75px;
+	left: 0;
+}
+#d-goButton input:hover {
+	color: #fff;
+} 
+#d-checkBox { /* IE 6 Hacked */
+	float: left;
+	display: block;
+	width: 160px;
+	margin: 10px 0 0 5px;
+	border-bottom: 1px dotted #575757;
+}
+#d-checkBox input { /* IE 7 Hacked */
+	float: left;
+	display: block;
+	margin: 4px 6px 0 0;
+}
+#d-checkBox label {
+	font-size: 0.70em;
+	color: #797979;
+	float: left;
+	width: 129px;
+	padding: 1px 0 8px 10px;
+	margin: 0;
+	line-height: 1.6em;
+}
+#d-passwordReminder {
+	float: left;
+	display: block;
+	width: 130px;
+	margin: 8px 0 0 35px;
+	font-size: 0.70em;
+	line-height: 1.6em;
+	color: #797979;
+}
+
+#d-passwordReminder p {
+	padding: 0;
+	margin: 0;
+}
+
+
+/* --- Password Reminder form --*/
+
+#d-cancelButton input:hover {
+	color: #fff;
+}
+
+#d-sendButton input { /* IE 7 Hacked */ 
+	width: 120px;
+	height: 40px;	
+	margin: 15px 13px 0 0;
+	padding: 0;
+	cursor: pointer;
+	color: #838383;
+	font-size: 0.70em;
+}
+#d-sendButton input:hover {
+	color: #fff;
+} 
+
+#reminderButtons input { /* IE 7 Hacked */ /* IE 6 Hacked */
+	display: block;
+	background-color: #454545;
+	border: 4px solid #555555;
+	letter-spacing: -0.04em;
+	color: #797979;
+}	
+#reminderButtons input:hover {
+	background-color: #99b223;
+	border: 4px solid #7a8e1a;
+	color: #e6f893;
+}
+
+#d-cancelButton { /* IE 6 Hacked */
+	float: left;
+	display: block;
+	width: 160px;
+	margin: 10px 0 0 5px;
+}
+#d-cancelButton input { /* IE 7 Hacked */
+	float: left;
+	display: block;
+	margin: 13px 15px 0 0;
+	width: 120px;
+	height: 40px;
+	padding:0;
+	cursor: pointer;
+	color: #838383;
+	font-size: 0.70em;
+}	
+	
+#d-cancelButton label {
+	font-size: 0.70em;
+	color: #797979;
+	float: left;
+	width: 129px;
+	padding: 1px 0 8px 10px;
+	margin: 0;
+	line-height: 1.6em;
+}
+#d-sendButton {
+	float: left;
+	display: block;
+	width: 130px;
+	margin: 8px 0 0 5px;
+	line-height: 1.6em;
+	color: #797979;
+}
+
+#d-sendButton p {
+	padding: 0;
+	margin: 0;
+}

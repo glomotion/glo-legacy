@@ -1,0 +1,122 @@
+#d-admn-tlbr-cntnr {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+}
+#d-admn-tlbr-shdw {
+	width: 650px;
+	margin: 0 auto;
+	padding: 5px 5px 0 5px;
+	background: rgba(0,0,0,0.10);
+	
+	-moz-border-radius-topright: 21px;
+	-moz-border-radius-topleft: 21px;
+	-webkit-border-top-right-radius: 21px;
+	-webkit-border-top-left-radius: 21px;
+}
+#d-admn-tlbr {
+	background: #7dab1e;
+	padding: 10px 0 0 0;
+	
+	-moz-border-radius-topright: 19px;
+	-moz-border-radius-topleft: 19px;
+	-webkit-border-top-right-radius: 19px;
+	-webkit-border-top-left-radius: 19px;
+}
+#h5-grn-cms-tlbr {
+	color: #e8fc89;
+	float: left;
+	margin: 6px 15px 11px 20px;
+	font-style: italic;
+}
+#h5-grn-cms-tlbr span {
+	color: #455e0f;
+}
+#ul-pge-admn-btns, #ul-pge-admn-btns li {
+	padding: 2px 15px 0 0;
+	margin: 0 0 0 270px;
+	background: url(../images/vert-spcr-admn-tlbr.png) repeat-y 0 0;
+	min-height: 25px;
+}
+#ul-pge-admn-btns li {
+	width: auto;
+	float: right;
+	white-space: nowrap;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 0 6px;
+	background: transparent;
+}
+#ul-pge-admn-btns li#li-tlbr-logout {
+}
+#ul-pge-admn-btns li a {
+	display: block;
+	width: auto;
+	padding: 6px 8px;
+	background: #628a10;
+	color: #efff85;
+	font-size: 13px;
+	letter-spacing: -1px;
+	line-height: 13px;
+	border: none;
+	font-style: italic;
+	
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	
+	-moz-box-shadow: #91b923 0px 1px 0px;	
+	-webkit-box-shadow: #91b923 0px 1px 0px;		
+	box-shadow: #91b923 0px 1px 0px;			
+}
+#ul-pge-admn-btns li a:hover {
+	background: #108cc7;
+	color: #ddf5ff;
+	
+	-moz-box-shadow: #5dbce9 0px 1px 0px;	
+	-webkit-box-shadow: #5dbce9 0px 1px 0px;		
+	box-shadow: #5dbce9 0px 1px 0px;		
+}
+#li-edt-html a span {
+	float: left;
+	display: block;
+	width: 39px;
+	height: 45px;
+	background: url(../images/icn-edit-page.png) no-repeat 0 0;
+	margin: -26px 5px 0 0;
+	position: relative;
+}
+#ul-pge-admn-btns li#li-tlbr-logout a {
+	text-indent: -3000px;
+	float: right;
+	margin: 0 0 0 12px;
+	padding: 5px 8px 6px 8px;
+	background: #6c9518;
+}
+#ul-pge-admn-btns li#li-tlbr-logout a:hover {
+	background: #108cc7;
+	color: #ddf5ff;
+}
+#li-tlbr-logout a span {
+	float: left;
+	display: block;
+	width: 13px;
+	height: 16px;
+	background: url(../images/icn-usr-logout.png) no-repeat 0 0;
+}
+#li-tlbr-logout a:hover span {
+	background-position: 0 -16px;
+}
+
+
+
+
+
+
+#d-clr-fx {
+	width: 100%;
+	clear: left;
+	height: 1px;
+}

@@ -1,0 +1,12 @@
+body {
+/*	font-size: 0.8em; /* Makes type a bit smaller at 1024 so layout doesn't look unbalanced 
+	line-height: 1.5em;	 As above */
+}
+
+
+#a-logo-sans-symbl {
+	left: 38%;	
+}
+#a-toggl-headr {
+	margin: -56px 0 0 585px;		
+}

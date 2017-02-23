@@ -1,0 +1,138 @@
+#ul-nav li a  {
+	padding: 13px 12px; 
+}
+#d-notices, #d-events {
+	width: 547px;	
+}
+#d-events {
+	margin: 0 0 15px 15px;
+	min-height: 0;
+}
+#f-refine input {
+	width: 220px;	
+}
+#d-notice-head h3 {
+	font-size: 1.5em;	
+}
+#ul-filter-notices li a, #ul-filter-notices li #sel {
+	padding: 8px 9px 15px;	
+	font-size: 1.0em;
+}
+#ul-filter-notices li a:hover {
+	padding: 3px 9px 15px;
+	margin: 5px 0 0 0;		
+}
+#ul-notice-listing li, #ul-notice-listing li:first-child, #ul-notice-listing li:last-child {
+	width: 235px;
+	display: inline-block;
+	padding: 10px;
+	vertical-align: top;
+	background: transparent;
+	margin: 5px 0 0 0;	
+	color: #8F8E8E; 	
+}
+#ul-notice-listing li:first-child {
+	margin: 5px 18px 0 5px;	
+}
+li:first-child .sp-title {
+	color: #EA9923;
+}
+#ul-notice-listing .sp-break-out, #ul-notice-listing li:first-child .sp-break-out {
+	float: none;	
+	width: auto;
+	margin: 10px 0;
+}
+.sp-break-out {
+	color: #7688A8;	
+}
+#ul-notice-listing .sp-break-out span {
+	display: inline-block;	
+	margin: 0 22px 0 0;
+	padding: 0 0 10px 0;
+}
+li:first-child .sp-article, .sp-article {
+	color: #8F8E8E;
+}
+#a-logo {
+	height: 123px;
+	width: 118px;
+	background: url("../img/ipad-jcc-logo-symbol.png") no-repeat top left;
+	left: 43%;
+	top: 25px;	
+}
+#a-logo img {
+	display: none;	
+}
+
+#a-jcc-txt-logo { 
+	display: block;
+	float: left;
+	border: none;
+	margin: 14px 0 0;
+}
+#d-srch {
+	padding: 13px 0 0 0;
+}
+#d-weathr-usr-area {
+	margin: -47px 0 0 0;
+}
+#a-advncd {
+	letter-spacing: -0.03em;
+	line-height: 1.1em;
+	font-size: 0.95em;	
+	margin: 5px 0 0 0;
+	padding: 5px 5px 9px 57px;	
+}
+#a-print {
+	
+}
+#ul-filter-events li a, #ul-filter-events li #sel
+{
+	padding: 8px 9px 15px;	
+}
+#ul-filter-events li a:hover {
+	padding: 3px 9px 15px;	
+}
+#ul-event-listing li {
+	width: 235px;
+	display: inline-block;
+	padding: 10px;
+	vertical-align: top;
+	background: transparent;
+	margin: 5px 0 0 0;
+	color: #8F8E8E;		
+}
+#ul-event-listing li:last-child {
+	display: none;
+}
+#ul-event-listing {
+	background: white;	
+	-webkit-border-radius: 15px;
+	border-radius: 15px;	
+}
+#ul-event-listing li:first-child {
+	margin: 5px 18px 0 5px;
+}
+#p-copyrght {
+	margin: 15px 50px 0 30px;
+}
+#ul-footr li {
+	margin: 0;	
+}
+#ul-footr a {
+	font-size: 0.9em;
+	letter-spacing: -0.1em;	
+}
+
+
+/* Internal Page Styles -------------------------------------------------------------------------------------------  */
+
+
+#d-cms-input {
+	-webkit-column-count: 1;
+	-webkit-column-gap: 0;
+	column-count: 1;
+	column-gap: 0;		
+}
+
+

@@ -1,0 +1,17 @@
+/*--------Events--------*/
+
+.eventSection {
+padding:20px 0 20px 0;
+border-bottom:1px dotted #ccc;
+}
+
+.eventSection img,
+.eventEvent img {
+padding:0 10px 10px 0;
+float:left;
+}
+
+.eventDate {
+color:#666666;
+font-size:0.9em;
+}

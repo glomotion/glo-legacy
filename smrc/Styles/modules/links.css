@@ -1,0 +1,21 @@
+/*-----Links (table styles the same as Downloads - to amend use "links_module" class as shown below) -----------*/
+
+.links_module {}
+
+.links_module .tbl_header {}
+
+.links_module .tbl1 {}
+
+.links_module .tbl2 {}
+
+.linksSortBy {
+font-weight:bold;
+}
+
+#linksSection .notify {
+margin-bottom:10px;
+}
+
+#linksSection .sorter {
+margin-bottom:10px;
+}

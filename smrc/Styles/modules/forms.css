@@ -1,0 +1,82 @@
+/*--------Form elements--------*/
+
+.Form_Button {
+cursor:pointer;
+border:outset 1px #a5b81e;
+background:#bfd32f;
+color:#fff;
+font-weight:bold;
+padding:1px 2px;
+background:url(../../Images/form_btn_bg.jpg) repeat-x left top;
+}
+
+.formLabel {
+padding:10px 0 0 0;
+color:#9bad1d;
+font-size:1.0em;
+font-weight:bold;
+}
+
+.formHTMLeditor {
+padding:0 0 20px 0;
+}
+
+.formHelp {
+font-weight:normal;
+font-size:0.9em;
+color:#666666;
+}
+
+#breezeForm {
+background-color:#ececec;
+border:1px dotted #bfd32f;
+padding-top:20px;
+}
+
+#formContent {
+padding:20px;
+}
+
+.formHeader {
+background:url(../../Images/form_header_bg.gif) repeat-x;
+height:58px;
+width:100%;
+color:#666;
+}
+
+.formHeader h4 {
+color:#bfd32f;
+float:left;
+font-weight:normal;
+font-size:30px;
+padding:0 5px 0 20px;
+}
+
+.formHeader .formDesc {
+padding-top:21px
+}
+
+.formButtons {
+padding:20px 0 0 0;
+}
+
+.bl_hide {
+display:none
+}
+
+.bl_left {
+float:left;
+width:150px;
+min-height:30px;
+color:#9bad1d;
+font-size:1.0em;
+font-weight:bold;
+}
+
+.bl_right {
+min-height:30px;
+}
+
+.Error_Message {
+color:#FF0000;
+}

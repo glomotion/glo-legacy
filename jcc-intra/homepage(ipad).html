@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<!-- 
+www.phpied.com/conditional-comments-block-downloads/ -->
+<!--[if IE]><![endif]-->
+
+<!-- 
+Always force latest IE rendering engine (even in intranet) & Chrome Frame Remove this if you use the .htaccess -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>JCCA Ipad Homepage Template</title>
+
+<!--Fix Scroller in IOS4+-->
+<script type="text/javascript" src="js/iscroll-min.js"></script>
+<script type="text/javascript"> 
+	var myScroll;
+	var a = 0;
+	function loaded() {
+		setHeight();	// Set the wrapper height. Not strictly needed, see setHeight() function below.
+	 
+		// Please note that the following is the only line needed by iScroll to work. Everything else here is to make this demo fancier.
+		myScroll = new iScroll('scroller'/*, {desktopCompatibility:true}*/);
+	}
+	 
+	// Change wrapper height based on device orientation. Not strictly needed by iScroll, you may also use pure CSS techniques.
+	function setHeight() {
+		var footerH = document.getElementById('d-nav').offsetHeight,
+			wrapperH = window.innerHeight - footerH;
+		document.getElementById('wrapper').style.height = wrapperH + 'px';
+	}
+	 
+	// Check screen size on orientation change
+	window.addEventListener('onorientationchange' in window ? 'orientationchange' : 'resize', setHeight, false);
+	 
+	// Prevent the whole screen to scroll when dragging elements outside of the scroller (ie:header/footer).
+	// If you want to use iScroll in a portion of the screen and still be able to use the native scrolling, do *not* preventDefault on touchmove.
+	// document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	 
+	// Load iScroll when DOM content is ready.
+	document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
+
+<!-- 
+GOOGLE FONTS API Font Styles 
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin' rel='stylesheet' type='text/css'>  -->
+
+<!-- 
+The 1140px Grid 
+<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" /> -->
+
+<!-- 
+Make minor type adjustments for 1024 monitors 
+<link rel="stylesheet" href="css/smallerscreen.css" media="only screen and (max-width: 1023px)" />
+Resets grid for mobile
+<link rel="stylesheet" href="css/mobile.css" media="handheld, only screen and (max-width: 767px)" />  
+Put your layout here 
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="screen" /> 
+Resets grid for Tablets 
+<link rel="stylesheet" href="css/tablet-portrait.css" media="only screen and (max-width: 1023px) and (orientation:portrait)" />  
+<link rel="stylesheet" href="css/tablet-landscape.css" media="only screen and (max-width: 1023px) and (orientation:landscape)" />  -->
+<link rel="stylesheet" href="css/tablet-landscape.css" media="only screen" />
+<link rel="stylesheet" href="css/tablet-portrait.css" media="only screen and (max-width: 1023px) and (orientation:portrait)" />
+
+<!-- 
+Internet Explorer Hacks -->
+<!--[if IE 7]>
+	<link rel="stylesheet" href="css/ie7.css" type="text/css" media="screen" />
+	<![endif]-->
+<!--[if IE 8]>
+	<link rel="stylesheet" href="css/ie8.css" type="text/css" media="screen" />
+	<![endif]-->
+
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="scroller">
+    <div id="d-headr"> <a href="internal-page(ipad).html" id="a-jcc-txt-logo"><img src="img/ipad-jcc-text-logo.png" alt="JCCA Text Logo"></a>
+      <div id="d-srch">
+        <form id="f-srch">
+          <input type="text" value="keyword search">
+        </form>
+        <a id="a-advncd" href="internal-page(ipad).html"><strong>advanced</strong> search</a> </div>
+      <div id="d-weathr-usr-area"> <span id="sp-weathr-icon"></span>
+        <div id="d-weathr-time">
+          <div id="d-time"> <span id="sp-time">12:31pm</span> <span id="sp-day">tuesday</span> <span id="sp-date">23 december 2011</span> </div>
+        </div>
+        <div id="d-usr"> <a href="internal-page(ipad).html" title="logout from intranet" id="a-logout">logout from intranet</a> <span id="sp-usr-name">Jacqui Butler</span> <span id="sp-usr-type">staff member</span>
+          <div id="d-usr-options"> <a href="internal-page(ipad).html">change password</a> <a href="internal-page(ipad).html">edit profile</a> </div>
+        </div>
+      </div>
+      <a href="internal-page(ipad).html" id="a-logo" title="click to go home"><img src="img/ipad-jcc-logo.png" alt="JCCA Logo"></a>
+      <div id="d-welcome">
+        <h1 id="h1-hello"><strong>hello</strong> again Jacqui!</h1>
+        <p id="p-welcome"><strong><span>welcome</span> back</strong> to your john curtin college intranet dashboard.</p>
+      </div>
+      <div class="clr-fix"></div>
+    </div>
+    <div id="d-notices">
+      <div id="d-notice-head">
+        <div id="d-notice-func"> <a href="internal-page(ipad).html" title="view the notices stream RSS feed" id="a-rss">view the notices stream RSS feed</a> <a href="internal-page(ipad).html" title="view notice stream archive" id="a-hist">view notice stream archive</a><a href="internal-page(ipad).html" id="a-add-notice">add notice</a> </div>
+        <h3><strong>daily</strong> school notice <span>stream</span></h3>
+        <div id="d-refine-notices">
+          <form id="f-refine">
+            <input type="text" value="keyword search">
+          </form>
+        </div>
+        <ul id="ul-filter-notices">
+          <li><a href="internal-page(ipad).html">all</a></li>
+          <li><a href="internal-page(ipad).html">year 7</a></li>
+          <li><a id="sel" href="internal-page(ipad).html">year 8</a></li>
+          <li><a href="internal-page(ipad).html">year 9</a></li>
+          <li><a href="internal-page(ipad).html">year 10</a></li>
+          <li><a href="internal-page(ipad).html">year 11</a></li>
+          <li><a href="internal-page(ipad).html">year 12</a></li>
+          <li><a href="internal-page(ipad).html">staff</a></li>
+        </ul>
+      </div>
+      <ul id="ul-notice-listing">
+        <li> <span class="sp-title"><strong>super extra very</strong> long notice title text string goes inside this area and wraps nicely</span> <span class="sp-break-out"> <span><strong>adressing</strong>Year 8</span> <span><strong>author</strong>Jacqui Butler</span> <span><strong>posted</strong>08:30pm</span> </span> <span class="sp-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis neque iaculis sodales. Maecenas amet est molestie tempor. Etiam rutrum, mauris non tempor tincidunt, tortor tortor consectetur urna, lacinia vestibulum metus magna a urna. Vestibulum semper viverra nec.</span> </li>
+        <li> <span class="sp-title"><strong>super extra </strong> long notice title text string goes inside this area</span><span class="sp-break-out"> <span><strong>adressing</strong>Year 8</span> <span><strong>author</strong>Jacqui Butler</span> <span><strong>posted</strong>08:30pm</span> </span> <span class="sp-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis neque iaculis sodales. Maecenas amet est molestie tempor. Etiam rutrum, mauris non tempor tincidunt, tortor tortor consectetur urna, lacinia vestibulum metus magna a urna. Vestibulum semper viverra nec.</span> </li>
+      </ul>
+      <ul id="ul-pagr">
+        <li><a href="internal-page(ipad).html" id="sel">1</a></li>
+        <li><a href="internal-page(ipad).html">2</a></li>
+        <li><a href="internal-page(ipad).html">3</a></li>
+        <li><span id="sp-spacr">...</span></li>
+        <li><a href="internal-page(ipad).html">11</a></li>
+        <li><a href="internal-page(ipad).html">12</a></li>
+        <li><a href="internal-page(ipad).html">13</a></li>
+        <li><a id="a-next" href="internal-page(ipad).html"><span></span></a></li>
+      </ul>
+    </div>
+    <div id="d-events">
+      <div id="d-events-head">
+        <div id="d-events-func"> <a href="internal-page(ipad).html" title="goto events calender section" id="a-calendr">goto events calender section</a> <a href="internal-page(ipad).html" title="download ICAL format calender file" id="a-ical">download ICAL format calender file</a> </div>
+        <h3><strong>school</strong> events <span><strong>this</strong> month</span></h3>
+        <ul id="ul-filter-events">
+          <li><a href="internal-page(ipad).html">october</a></li>
+          <li><a href="internal-page(ipad).html">november</a></li>
+          <li><a id="sel" href="internal-page(ipad).html">december</a></li>
+          <li><a href="internal-page(ipad).html">january</a></li>
+          <li><a href="internal-page(ipad).html">february</a></li>
+        </ul>
+      </div>
+      <ul id="ul-event-listing">
+        <li> <span class="sp-break-out"> <span><strong>event date</strong>24 dec 2011</span> <span><strong>author</strong>Jacqui Butler</span> </span> <span class="sp-title"><strong>event title</strong> text goes here</span> <span class="sp-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis neque iaculis sodales. Maecenas amet est molestie tempor tempor tincidunt. <a class="a-read-on" href="internal-page(ipad).html"><strong>Read</strong> on &gt;</a> </span> </li>
+        <li> <span class="sp-break-out"> <span><strong>event date</strong>24 dec 2011</span> <span><strong>author</strong>Jacqui Butler</span> </span> <span class="sp-title">super extra very long notice title text goes inside here</span> <span class="sp-article">Lorem ipsum dolor sit amet, consectetur adipiscing or tortor consectetur urna, lacinia vestibulum metus magna a urna. Vestibulum semper viverra nec. <a class="a-read-on" href="internal-page(ipad).html"><strong>Read</strong> on &gt;</a></span> </li>
+        <li> <span class="sp-break-out"> <span><strong>event date</strong>24 dec 2011</span> <span><strong>author</strong>Jacqui Butler</span> </span> <span class="sp-title">super extra very long notice title text goes inside here</span> <span class="sp-article">Lorem ipsum dolor sit amet, consectetur adipiscing or tortor consectetur urna, lacinia vestibulum metus magna a urna. Vestibulum semper viverra nec. <a class="a-read-on" href="internal-page(ipad).html"><strong>Read</strong> on &gt;</a></span> </li>
+      </ul>
+      <a id="a-view-events" href="internal-page(ipad).html">view <strong>all events</strong></a> </div>
+    <div id="d-files"> <a id="a-print" href="internal-page(ipad).html">print this page</a>
+      <h3><strong>recent</strong> active <span><strong>files</strong> listing</span></h3>
+      <ul id="ul-files-listing">
+        <li><a href="internal-page(ipad).html"><span class="sp-file-name">file-name.docx</span><span class="sp-file-size"><strong>File size:</strong> 520kb</span><span class="sp-file-date"><strong>Modified:</strong> 15th dec 2001</span></a></li>
+        <li><a href="internal-page(ipad).html"><span class="sp-file-name">image-name.jpg</span><span class="sp-file-size"><strong>File size:</strong> 320kb</span><span class="sp-file-date"><strong>Modified:</strong> 12th dec 2001</span></a></li>
+        <li><a href="internal-page(ipad).html"><span class="sp-file-name">extra-long-file-name...</span><span class="sp-file-size"><strong>File size:</strong> 520kb</span><span class="sp-file-date"><strong>Modified:</strong> 10th dec 2001</span></a></li>
+        <li><a href="internal-page(ipad).html"><span class="sp-file-name">webpage-name.html</span><span class="sp-file-size"><strong>File size:</strong> 20kb</span><span class="sp-file-date"><strong>Modified:</strong> 9th dec 2001</span></a></li>
+      </ul>
+      <a class="a-files" href="internal-page(ipad).html">view <strong>user storage area</strong></a> <a class="a-files" href="internal-page(ipad).html"><strong>learning area</strong> resources</a> </div>
+    <div id="d-footr">
+      <p id="p-copyrght"><strong>&copy; Copyright 2011</strong><br>
+        John Curtin College</p>
+      <ul id="ul-footr">
+        <li><a href="internal-page(ipad).html">back to top</a></li>
+        <li><a href="internal-page(ipad).html">privacy policy</a></li>
+        <li><a href="internal-page(ipad).html">acceptable use</a></li>
+        <li><a href="internal-page(ipad).html">disclaimer</a></li>
+      </ul>
+      <a id="a-dandelion" href="http://www.creativenature.com.au" title="Digital Strategy by Creative Nature"><img src="img/dandelion.png" alt="moo" /></a>
+      <div class="clr-fix"></div>
+    </div>
+  </div>
+</div>
+<div id="d-nav">
+  <ul id="ul-nav">
+    <li><a href="internal-page(ipad).html" id="sel">home</a></li>
+    <li><a href="internal-page(ipad).html">events</a></li>
+    <li><a href="internal-page(ipad).html">canteen</a></li>
+    <li><a href="internal-page(ipad).html">library</a></li>
+    <li><a href="internal-page(ipad).html">storage</a></li>
+    <li><a href="internal-page(ipad).html">address book</a></li>
+    <li><a href="internal-page(ipad).html">uniforms</a></li>
+    <li><a href="internal-page(ipad).html">wiki</a></li>
+  </ul>
+</div>
+
+<!-- 
+Javascript at the bottom for fast page loading --> 
+
+<!-- 
+Grab Google CDN's jQuery. fall back to local if necessary --> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script> 
+<script type="text/javascript" src="js/plugins.js"></script> 
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
